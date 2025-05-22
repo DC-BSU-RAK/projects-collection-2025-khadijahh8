@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/pawAnimation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/paw_walk_animation"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KittyCare"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+</LinearLayout>

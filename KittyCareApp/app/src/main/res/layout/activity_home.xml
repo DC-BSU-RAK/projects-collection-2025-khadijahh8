@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="60dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to KittyCare! Start by adding your cat or check out some care tips."
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center" />
+
+        <!-- Image + Button 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:padding="16dp">
+
+            <!-- Section 1: Image + Button -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="32dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_add_cat"
+                    android:layout_width="181dp"
+                    android:layout_height="162dp"
+                    android:src="@drawable/cat1" />
+
+                <Button
+                    android:id="@+id/button_add_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Cat"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Section 2: Image + Button -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image_tips"
+                    android:layout_width="181dp"
+                    android:layout_height="162dp"
+                    android:src="@drawable/cat2" />
+
+                <Button
+                    android:id="@+id/button_care_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Care Tips"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_cat_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/cedarvillecursiveregular"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Loading cat info..." />
+
+        <ImageView
+            android:id="@+id/image_cat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+             />
+
+        <Button
+            android:id="@+id/button_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Cat Image"
+            android:layout_marginTop="50dp"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
